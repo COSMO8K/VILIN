@@ -1,5 +1,6 @@
 @use "/src/sass/libs/modern-normalize.min.css";
 @use "pxtorem" as *;
+@use "/src/sass/base/fonts";
 @use "/src/sass/base/variables" as *;
 
 // @use "/src/sass/base/variables.scss";
@@ -8,6 +9,8 @@
 @use "/src/sass/blocks/header.scss";
 @use "/src/sass/blocks/hero.scss";
 @use "/src/sass/blocks/rec.scss";
+@use "/src/sass/blocks/sale.scss";
+@use "/src/sass/blocks/trends.scss";
 
 h1,
 h2,
@@ -44,7 +47,7 @@ img {
 :root {
   --font-family: "Nunito Sans", sans-serif;
   --second-family: "Nova Slim", sans-serif;
-  --third-family: "Noto Serif Thai", sans-serif;
+  --third-family: "Naston", sans-serif;
 }
 
 html {

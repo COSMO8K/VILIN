@@ -7,10 +7,15 @@
     justify-content: space-between;
     width: 100%;
   }
-  &__svg {
-    display: flex;
-    justify-content: center;
-    margin-top: 53px;
+  &__title {
+    font-family: $font-accent;
+    padding-top: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 78px;
+    color: #fff;
+    text-shadow: -5px 5px 6px rgba(0, 0, 0, 0.4), 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   &__btns {

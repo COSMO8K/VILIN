@@ -1,0 +1,33 @@
+@use "/src/sass/base/variables" as *;
+
+.sale {
+  padding-top: 74px;
+
+  &__wrapper {
+    position: relative;
+    min-height: 500px;
+    background-image: url("/src/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    width: 800px;
+    font-weight: 400;
+    font-size: 91px;
+    color: #f00;
+    text-align: center;
+    font-family: $font-accent;
+    text-transform: uppercase;
+  }
+  &__svg {
+    position: absolute;
+    right: 11px;
+    bottom: 45px;
+  }
+}
