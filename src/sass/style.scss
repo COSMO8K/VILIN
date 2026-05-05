@@ -1,0 +1,68 @@
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "pxtorem" as *;
+@use "/src/sass/base/variables" as *;
+
+// @use "/src/sass/base/variables.scss";
+// @use "/src/sass/base/basic.scss";
+
+@use "/src/sass/blocks/header.scss";
+@use "/src/sass/blocks/hero.scss";
+@use "/src/sass/blocks/rec.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+:root {
+  --font-family: "Nunito Sans", sans-serif;
+  --second-family: "Nova Slim", sans-serif;
+  --third-family: "Noto Serif Thai", sans-serif;
+}
+
+html {
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-inline-size: 320px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+a {
+  text-decoration: none;
+}

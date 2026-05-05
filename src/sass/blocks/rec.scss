@@ -1,0 +1,61 @@
+@use "/src/sass/base/variables" as *;
+
+.rec {
+  padding-top: 41px;
+  &__title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 232px;
+    // height: 391px;
+  }
+  &__slide {
+    text-align: center;
+  }
+
+  &__image {
+    width: 232px;
+    height: 331px;
+    margin: 0 auto;
+    background: rgba(217, 217, 217, 0.31);
+  }
+  &__name {
+    font-family: $font-logo;
+    padding: 10px 0;
+  }
+  &__link {
+    // margin-top: 10px;
+    color: #c3c2c2;
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
+  }
+}
