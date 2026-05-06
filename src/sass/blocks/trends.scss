@@ -1,3 +1,68 @@
+@use "/src/sass/base/variables" as *;
+
 .trends {
   margin-top: 74px;
+
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__hero {
+    min-height: 416px;
+    padding: 48px 16px 0;
+    background-image: url("/src/img/trends/банер 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-family: $font-third;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: $font-third;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__slider {
+    margin-top: -190px;
+    position: relative;
+  }
+
+  &__slide {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 302px;
+    height: 376px;
+    object-fit: cover;
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: 3.25rem;
+    height: 3.25rem;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }

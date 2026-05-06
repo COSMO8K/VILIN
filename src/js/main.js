@@ -53,3 +53,15 @@ const recSlider = new Swiper(".rec__slider", {
     nextEl: ".rec__button--next",
   },
 });
+const trendsSlider = new Swiper(".trends__slider", {
+  modules: [Navigation],
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: false,
+
+  slidesOffsetBefore: 35,
+
+  navigation: {
+    nextEl: ".trends__button--next",
+  },
+});
